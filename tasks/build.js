@@ -18,6 +18,11 @@ gulp.task('build-clean', function () {
 });
 
 
+gulp.task('build-modules', function () {
+    return gulp.src(paths.source + 'node_modules/**/*')
+        .pipe(gulp.dest(paths.output + 'node_modules'));
+});
+
 gulp.task('build-html', function () {
     return gulp.src(paths.source + '**/*.html')
         .pipe(gulp.dest(paths.output));
@@ -32,7 +37,7 @@ gulp.task('build-system', function () {
             .pipe(gulp.dest(paths.output)));
 });
 
-gulp.task('build-bundles', function () {
+gulp.task('build-bundle', function () {
     return bundler
         .bundle({
             force: true,
@@ -97,7 +102,8 @@ gulp.task('build', function (callback) {
     runSequence(
         'build-clean', [
             'build-scripts',
-            'build-bundles',
+            'build-modules',
+            'build-bundle',
             'build-system',
             'build-system-config',
             'build-html'],

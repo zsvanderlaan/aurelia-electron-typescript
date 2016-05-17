@@ -1,6 +1,8 @@
 import * as electron from 'electron';
 const BrowserWindow = electron.BrowserWindow;
 
+require('electron-reload')(__dirname);
+
 class Main {
   constructor() {
 
