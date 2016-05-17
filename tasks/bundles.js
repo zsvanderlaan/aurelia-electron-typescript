@@ -20,7 +20,7 @@ var bundles = {
             "text"
         ],
         "options": {
-            "inject": true,
+            "inject": false,
             "minify": true,
         }
     }
