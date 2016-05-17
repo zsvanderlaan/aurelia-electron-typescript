@@ -3,10 +3,6 @@
     "files.exclude": {
         "**/.git": true,
         "**/.svn": true,
-        "**/.DS_Store": true,
-        "**/node_modules" : true,
-        "**/jspm_packages" : true,
-        "output" : true,
-        ".vscode" : true
+        "**/.DS_Store": true
     }
 }

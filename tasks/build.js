@@ -3,6 +3,8 @@ var bundler = require('aurelia-bundler');
 var inject = require('gulp-inject-string');
 var ts = require('gulp-typescript');
 var watch = require('gulp-watch');
+var plumber = require('gulp-plumber');
+var sass = require('gulp-sass');
 
 var jetpack = require('fs-jetpack');
 var runSequence = require('run-sequence');
@@ -25,6 +27,7 @@ gulp.task('build-modules', function () {
 
 gulp.task('build-html', function () {
     return gulp.src(paths.source + '**/*.html')
+        .pipe(plumber())
         .pipe(gulp.dest(paths.output));
 });
 
@@ -35,6 +38,14 @@ gulp.task('build-system', function () {
 
         gulp.src('jspm_packages/system.js')
             .pipe(gulp.dest(paths.output)));
+});
+
+
+gulp.task('build-styles', function(){
+    return gulp.src(paths.source + '**/*.scss')
+    .pipe(plumber())
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest(paths.output));
 });
 
 gulp.task('build-bundle', function () {
@@ -77,7 +88,8 @@ gulp.task('build-scripts-browser', function () {
         declaration: false,
         module: 'system',
         target: 'es6',
-        experimentalDecorators: true
+        experimentalDecorators: true,
+        emitDecoratorMetadata: true,
     });
 
     var tsResult = gulp
@@ -86,7 +98,7 @@ gulp.task('build-scripts-browser', function () {
             paths.source + '**/*.ts',
             `jspm_packages/**/*.d.ts`,
             'typings/browser.d.ts'
-        ])
+        ])        
         .pipe(ts(project));
 
     return tsResult.js.pipe(gulp.dest(paths.output));
@@ -104,6 +116,7 @@ gulp.task('build', function (callback) {
             'build-scripts',
             'build-modules',
             'build-bundle',
+            'build-styles',
             'build-system',
             'build-system-config',
             'build-html'],
