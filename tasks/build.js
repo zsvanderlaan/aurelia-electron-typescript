@@ -5,6 +5,7 @@ var ts = require('gulp-typescript');
 var watch = require('gulp-watch');
 var plumber = require('gulp-plumber');
 var sass = require('gulp-sass');
+var htmlhint = require("gulp-htmlhint");
 
 var jetpack = require('fs-jetpack');
 var runSequence = require('run-sequence');
@@ -26,7 +27,8 @@ gulp.task('build-modules', function () {
 
 gulp.task('build-html', function () {
     return gulp.src(paths.source + '**/*.html')
-        .pipe(gulp.dest(paths.output));
+	
+    .pipe(gulp.dest(paths.output));
 });
 
 gulp.task('build-resources', function () {

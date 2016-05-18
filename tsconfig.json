@@ -1,7 +1,7 @@
 {
     "version": "1.9.0",
     "compilerOptions": {
-        "target": "es6",             
+        "target": "es6",
         "removeComments": true,
         "experimentalDecorators": true
     }

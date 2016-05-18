@@ -1,4 +1,3 @@
-import * as electron from 'electron';
 const remote = require('electron').remote;
 
 document.getElementById("min-btn").addEventListener("click", function (e) {

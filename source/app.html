@@ -1,10 +1,10 @@
 <template>
-  <require from="app.css"></require>
-  <require from="components/nav-bar.html"></require>
+  <require from="./app.css"></require>
+  <require from="./components/menu-bar.html"></require>
 
-  <nav-bar router.bind="router"></nav-bar>
+  <menu-bar items.bind="menuConfig"/>
 
   <div class="page-host">
     <router-view></router-view>
-  </div>   
+  </div>
 </template>
