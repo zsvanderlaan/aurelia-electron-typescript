@@ -1,34 +1,61 @@
-.icon {
-	display: inline-block;
-	width: 1em;
-	height: 1em;
-	fill: currentColor;
+@import 'styles/fonts';
+@import 'styles/icons';
+
+html {
+    margin: 0px;
+    padding: 0px;
+	font-family: 'Open Sans'
 }
 
-/* =======================================================================================
-Example showing how to change the color/size of the icons:
-.icon-name {
-	font-size: 32px; // works because "width" & "height" were set using em units
-	color: red; // works for single-colored icons, because "fill" was set to "currentColor"
-}
-======================================================================================== */
-
-.icon-config {
-	width: 0.857421875em;
-}
-
-.icon-minimise {
-	width: 0.927734375em;
+body {
+	padding: 0px;
+	margin: 0px;
+	color: #fff;
+	background-color: #2D2D30;
+	border: 1px solid #68217A;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
 }
 
-.icon-maximise {
-	width: 0.7998046875em;
+#title-bar {
+	-webkit-app-region: drag;
+	height: 32px;	
+	padding: 0px;
+    margin: 0px;  
+	color: #ADADAD;
 }
 
-.icon-close {
-	width: 0.8173828125em;
+#title {
+	position: fixed;
+	top: 0px;
+	left: 12px;	
+	line-height: 32px;
+	font-size: 14px;
 }
 
-.icon-help {
-	width: 0.580078125em;
+#title-bar-btns {
+	-webkit-app-region: no-drag;
+	position: fixed;
+	top: 1px;
+	right: 0px;	
+}
+
+#title-bar-btns button {
+	height: 32px;
+	width: 32px;
+	background-color: transparent;
+	border: none;
+	color: #F1F1F1;
+	font-size: 16px;
+}
+
+#title-bar-btns button:hover {
+	background-color: #3F3F41;
+}
+
+#content {
+	padding: 12px;
 }
