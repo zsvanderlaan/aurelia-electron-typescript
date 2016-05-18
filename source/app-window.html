@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Aurelia</title>    
-    <link rel="stylesheet" type="text/css" href="app-window.css">
-  </head>
 
-  <body aurelia-app="app-window">
-    <script src="system.js"></script>
-    <script src="system.config.js"></script>
-    <script src="aurelia.js"></script>
-    <script>
-      System.import('aurelia-bootstrapper');
-    </script>    
-  </body>
+<head>
+  <title>Aurelia</title>
+  <link rel="stylesheet" type="text/css" href="theme.css">
+</head>
+
+<body>
+  <div>
+    <svg class="icon icon-config"><use xlink:href="resources/symbols.svg#icon-config"></use></svg>
+    <svg class="icon icon-minimise"><use xlink:href="resources/symbols.svg#icon-minimise"></use></svg>
+    <svg class="icon icon-maximise"><use xlink:href="resources/symbols.svg#icon-maximise"></use></svg>
+    <svg class="icon icon-close"><use xlink:href="resources/symbols.svg#icon-close"></use></svg>
+    <svg class="icon icon-help"><use xlink:href="resources/symbols.svg#icon-help"></use></svg>
+  </div>
+
+  <div aurelia-app="app-window">
+  </div>
+
+  <script src="system.js"></script>
+  <script src="system.config.js"></script>
+  <script src="aurelia.js"></script>
+  <script>
+    System.import('aurelia-bootstrapper');
+  </script>
+</body>
+
 </html>

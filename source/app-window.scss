@@ -1,0 +1,34 @@
+.icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+}
+
+/* =======================================================================================
+Example showing how to change the color/size of the icons:
+.icon-name {
+	font-size: 32px; // works because "width" & "height" were set using em units
+	color: red; // works for single-colored icons, because "fill" was set to "currentColor"
+}
+======================================================================================== */
+
+.icon-config {
+	width: 0.857421875em;
+}
+
+.icon-minimise {
+	width: 0.927734375em;
+}
+
+.icon-maximise {
+	width: 0.7998046875em;
+}
+
+.icon-close {
+	width: 0.8173828125em;
+}
+
+.icon-help {
+	width: 0.580078125em;
+}

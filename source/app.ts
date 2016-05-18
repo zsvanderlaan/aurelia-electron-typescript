@@ -6,7 +6,7 @@ export class App {
   configureRouter(config: RouterConfiguration, router: Router) {      
     config.title = 'Aurelia';
     config.map([
-      { route: ['', 'dashboard'], name: 'dashboard', moduleId: 'routes/dashboard',      nav: true, title: 'Dashboard' }
+      { route: ['', 'dashboard'], name: 'dashboard', moduleId: 'pages/dashboard',      nav: true, title: 'Dashboard' }
     ]);
 
     this.router = router;

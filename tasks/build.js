@@ -116,6 +116,7 @@ gulp.task('build', function (callback) {
             'build-scripts',
             'build-modules',
             'build-bundle',
+            'build-resources',
             'build-styles',
             'build-system',
             'build-system-config',
