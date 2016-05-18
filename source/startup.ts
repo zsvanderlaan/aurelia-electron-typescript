@@ -3,7 +3,7 @@ const BrowserWindow = electron.BrowserWindow;
 
 require('electron-reload')(__dirname);
 
-class Main {
+class Startup {
   constructor() {
 
     const app = electron.app
@@ -19,7 +19,7 @@ class Main {
 
       var mainWindow: Electron.BrowserWindow = new BrowserWindow({ width: main_width, height: main_height });
 
-      mainWindow.loadURL('file://' + __dirname + '/index.html');
+      mainWindow.loadURL('file://' + __dirname + '/app-window.html');
 
       mainWindow.on('closed', function () {
         mainWindow = null;
@@ -28,4 +28,4 @@ class Main {
   }
 }
 
-var main: Main = new Main();
+var startup: Startup = new Startup();

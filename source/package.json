@@ -2,7 +2,7 @@
   "name": "example",
   "productName": "Example",
   "version": "0.1.0",
-  "main": "main.js",
+  "main": "startup.js",
   "dependencies": {
     "electron-reload": "^0.3.0"
   }
