@@ -5,7 +5,6 @@ var ts = require('gulp-typescript');
 var watch = require('gulp-watch');
 var plumber = require('gulp-plumber');
 var sass = require('gulp-sass');
-var htmlhint = require("gulp-htmlhint");
 
 var jetpack = require('fs-jetpack');
 var runSequence = require('run-sequence');
