@@ -15,6 +15,9 @@ var bundles = {
             "aurelia-loader-default",
             "aurelia-history-browser",
             "aurelia-logging-console",
+            "aurelia-dialog",
+            "aurelia-dialog/**/*.css!text",
+            "aurelia-dialog/**/*.html!text",
             "fetch",
             "jquery",
             "text"
