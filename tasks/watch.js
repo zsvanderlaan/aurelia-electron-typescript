@@ -10,5 +10,5 @@ gulp.task('watch', function () {
     gulp.watch(paths.source + '**/*.ts',   ['build-scripts']);
     gulp.watch(paths.source + '**/*.html', ['build-html']);
     gulp.watch(paths.source + '**/*.scss', ['build-styles']);
-    gulp.watch('system.config.js', ['build-bundles', 'build-system']);   
+    gulp.watch('system.config.js', ['build-bundle', 'build-system']);   
 });
