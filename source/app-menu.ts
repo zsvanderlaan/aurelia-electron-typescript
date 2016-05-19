@@ -7,6 +7,13 @@ export class AppMenu {
                 {
                     title: "Open",
                     execute: () => { window.alert("Clicked Open") }
+                },
+                {
+                    type: "seperator"                  
+                },           
+                {
+                    title: "Exit",
+                    execute: () => { window.alert("Clicked Exit") }
                 }
             ]
         }

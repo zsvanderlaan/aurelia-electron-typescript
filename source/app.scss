@@ -1,6 +1,6 @@
 @import 'styles/colours';
 
 .page-host { 
-  padding: 10; 
-  margin: 10; 
+  flex: 1;
+  overflow: auto;
 }

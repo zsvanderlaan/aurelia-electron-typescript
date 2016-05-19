@@ -28,4 +28,5 @@ export class AppWindow
     });
   }
 }
+
 var appWindow:AppWindow = new AppWindow()
