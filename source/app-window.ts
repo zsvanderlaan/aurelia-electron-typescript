@@ -1,10 +1,9 @@
+import {remote} from 'electron';
+
 export class AppWindow
-{   
-  remote:Electron.Remote;
-  
+{     
   constructor()
   {   
-    var remote = require('electron').remote;  
     var self = this;
     
     document.getElementById("min-btn").addEventListener("click", function (e) {
@@ -35,7 +34,6 @@ export class AppWindow
   }
   
   closeWindow(){
-    var remote = require('electron').remote;  
     var window: Electron.BrowserWindow = remote.getCurrentWindow();
     
     window.close();    
