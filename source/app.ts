@@ -16,8 +16,6 @@ export class App extends AppWindow {
     this.appMenu = appMenu;
   }
   
-  
-
   configureRouter(config: RouterConfiguration, router: Router) {
     config.title = 'Aurelia';
     config.map([
@@ -26,4 +24,11 @@ export class App extends AppWindow {
 
     this.router = router;
   }  
+  
+  tryCloseWindow()
+  {
+    alert("this is where I would ask if you're sure about closing...");
+    
+    super.closeWindow();
+  }
 }
