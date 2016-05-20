@@ -11,7 +11,7 @@ class Startup {
     app.on('window-all-closed', function () {
       if (process.platform != 'darwin')
         app.quit();
-    });           
+    });         
 
     app.on('ready', function () {
       var main_width: number = 800;
@@ -20,7 +20,7 @@ class Startup {
       var mainWindow: Electron.BrowserWindow = new BrowserWindow({ 
         width: main_width, 
         height: main_height,
-        frame:false });
+        frame:true });
 
       mainWindow.loadURL('file://' + __dirname + '/app-window.html');
 
