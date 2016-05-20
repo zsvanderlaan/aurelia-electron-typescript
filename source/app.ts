@@ -1,16 +1,22 @@
+/// <reference path="app-window.ts"/>
+
 import {autoinject} from 'aurelia-framework'
 import {Router, RouterConfiguration} from 'aurelia-router'
 import {AppMenu} from './app-menu';
+import {AppWindow} from './app-window';
 
 @autoinject
-export class App {
+export class App extends AppWindow {
   router: Router;  
   appMenu: AppMenu;
   
   constructor(appMenu: AppMenu)
-  {    
-    this.appMenu = appMenu;        
+  {   
+    super()
+    this.appMenu = appMenu;
   }
+  
+  
 
   configureRouter(config: RouterConfiguration, router: Router) {
     config.title = 'Aurelia';
@@ -19,7 +25,5 @@ export class App {
     ]);
 
     this.router = router;
-  }
-  
-  
+  }  
 }
