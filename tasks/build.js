@@ -80,7 +80,7 @@ gulp.task('build-scripts-background', function () {
     var tsResult = gulp
         .src([
             paths.source + 'startup.ts',
-            'typings/main.d.ts'
+            'typings/index.d.ts'
         ])
         .pipe(ts(project));
 
@@ -101,7 +101,7 @@ gulp.task('build-scripts-browser', function () {
             '!' + paths.source + 'startup.ts',
             paths.source + '**/*.ts',
             `jspm_packages/**/*.d.ts`,
-            'typings/browser.d.ts'
+            'typings/index.d.ts'
         ])        
         .pipe(ts(project));
 
