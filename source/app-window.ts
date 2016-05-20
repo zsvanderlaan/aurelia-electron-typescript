@@ -41,7 +41,6 @@ export class AppWindow
   
   showHelp()
   {
-    var window = require('electron').remote.getCurrentWindow();
-    window.webContents.openDevTools();
+    remote.getCurrentWindow().webContents.openDevTools();
   }
 }
