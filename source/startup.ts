@@ -20,7 +20,7 @@ class Startup {
       var mainWindow: Electron.BrowserWindow = new BrowserWindow({ 
         width: main_width, 
         height: main_height,
-        frame:true });
+        frame:false });
 
       mainWindow.loadURL('file://' + __dirname + '/app-window.html');
 
