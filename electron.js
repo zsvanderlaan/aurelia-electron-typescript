@@ -8,13 +8,9 @@ System.register([], function (exports_1, context_1) {
             electron = require('electron');
             exports_1("default", electron);
             
-            var keys = Object.keys(electron);
-
-            keys.forEach(function (key) {
-                console.log(key);
+            Object.keys(electron).forEach(function (key) {
                 exports_1(key, electron[key]);
             });
-
         }
     }
 });
