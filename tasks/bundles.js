@@ -21,7 +21,8 @@ var bundles = {
             "aurelia-dialog/**/*.html!text",
             "fetch",
             "jquery",
-            "text"
+            "text",
+            "electron"
         ],
         "options": {
             "inject": false,
