@@ -1,4 +1,4 @@
-var electron =(()=>{ return require('electron');}) ();
+const electron = require('electron');
 
 export default electron;
 export var remote = electron.remote;

@@ -8,7 +8,6 @@ System.config({
   },
 
   map: {
-    "electron" : "./electron-wrap.js",
     "aurelia-animator-css": "npm:aurelia-animator-css@1.0.0-beta.1.2.1",
     "aurelia-bootstrapper": "npm:aurelia-bootstrapper@1.0.0-beta.1.2.1",
     "aurelia-computed": "npm:aurelia-computed@0.9.1",
@@ -19,7 +18,8 @@ System.config({
     "aurelia-loader-default": "npm:aurelia-loader-default@1.0.0-beta.1.2.2",
     "aurelia-logging-console": "npm:aurelia-logging-console@1.0.0-beta.1.2.1",
     "aurelia-pal-browser": "npm:aurelia-pal-browser@1.0.0-beta.1.2.1",
-    "aurelia-router": "npm:aurelia-router@1.0.0-beta.1.2.3",    
+    "aurelia-router": "npm:aurelia-router@1.0.0-beta.1.2.3",
+    "electron": "./electron.js",
     "fetch": "github:github/fetch@1.0.0",
     "jquery": "npm:jquery@2.2.3",
     "text": "github:systemjs/plugin-text@0.0.8",
