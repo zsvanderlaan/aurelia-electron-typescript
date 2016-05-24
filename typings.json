@@ -1,6 +1,8 @@
 {
   "globalDependencies": {
     "electron": "registry:env/electron#0.37.6+20160416165306",
-    "node": "registry:env/node#4.0.0+20160507210304"
+    "long": "registry:dt/long#3.0.2+20160316155526",
+    "node": "registry:env/node#4.0.0+20160507210304",
+    "systemjs": "registry:dt/systemjs#0.18.4+20160417155658"
   }
 }

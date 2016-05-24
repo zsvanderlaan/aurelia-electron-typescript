@@ -22,7 +22,10 @@ var bundles = {
             "fetch",
             "jquery",
             "text",
-            "electron"
+            "electron",
+            "protobuf",
+            "bytebuffer",
+            "long",            
         ],
         "options": {
             "inject": false,

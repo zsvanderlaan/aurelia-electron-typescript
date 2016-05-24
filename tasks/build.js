@@ -13,6 +13,8 @@ var merge = require('merge-stream');
 var paths = require('./paths.js');
 var bundles = require('./bundles.js');
 
+//var sanitizeTemplate = require('./sanitize-template');
+
 gulp.task('build-clean', function () {
     return jetpack
         .cwd('./' + paths.output)
@@ -26,7 +28,7 @@ gulp.task('build-modules', function () {
 
 gulp.task('build-html', function () {
     return gulp.src(paths.source + '**/*.html')
-	
+	//.pipe(sanitizeTemplate())
     .pipe(gulp.dest(paths.output));
 });
 
@@ -94,6 +96,7 @@ gulp.task('build-scripts-browser', function () {
         target: 'es6',
         experimentalDecorators: true,
         emitDecoratorMetadata: true,
+        allowSyntheticDefaultImports: true
     });
 
     var tsResult = gulp
