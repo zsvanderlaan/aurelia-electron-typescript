@@ -26,7 +26,7 @@ var checkSelfClose = function () {
     };
 
     if(customTags.length > 0)
-        gutil.log('WARNING', 'found ' + matches.length + " non-void self-closed tags in", 
+        gutil.log('WARNING', 'found ' + customTags.length + " non-void self-closed tags in", 
         file.path.substring(file.cwd.length, file.path.Length),
         "tags:", customTags
         );
