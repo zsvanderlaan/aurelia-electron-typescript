@@ -28,14 +28,12 @@ System.config({
     "protobuf": "github:dcodeIO/protobuf.js@5.0.1",
     "text": "github:systemjs/plugin-text@0.0.8",
     "github:dcodeIO/bytebuffer.js@5.0.1": {
-      "dcodeIO/long.js": "github:dcodeIO/long.js@3.1.0"
-    },
-    "github:dcodeIO/long.js@3.1.0": {
-      "dcodeIO/long.js": "github:dcodeIO/long.js@3.1.0"
+      "long": "github:dcodeIO/long.js@3.1.0"
     },
     "github:dcodeIO/protobuf.js@5.0.1": {
-      "dcodeIO/bytebuffer.js": "github:dcodeIO/bytebuffer.js@5.0.1",
-      "jspm/nodelibs-fs": "github:jspm/nodelibs-fs@0.1.2"
+      "bytebuffer": "github:dcodeIO/bytebuffer.js@5.0.1",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "path": "github:jspm/nodelibs-path@0.1.0"
     },
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.4.0"

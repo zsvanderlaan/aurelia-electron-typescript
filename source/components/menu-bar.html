@@ -1,5 +1,6 @@
 <template bindable="items">
-  <require from="./menu-bar.css"></require>
+  <require from="./menu-bar.css" ></require>   
+    
   <div class=menuContainer>
     <div class="dropdown" repeat.for="item of items">
       <button class="dropbtn">${item.title}</button>
@@ -11,5 +12,5 @@
         </a>
       </div>
     </div>  
-  </div>
+  </div>   
 </template>
