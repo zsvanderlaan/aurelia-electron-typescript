@@ -13,6 +13,7 @@
     "electron-prebuilt": "^1.1.0",
     "fs-jetpack": "^0.9.0",
     "gulp": "^3.9.1",
+    "gulp-aurelia-template-lint": "^0.1.1",
     "gulp-batch": "^1.0.5",
     "gulp-file": "^0.3.0",
     "gulp-inject-string": "^1.1.0",
