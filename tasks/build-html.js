@@ -9,9 +9,7 @@ const stream_1 = require('stream');
 
 
 gulp.task('build-html', function () {
-    return gulp.src([
-        '!source/app-window.html',
-        'source/**/*.html'])
+    return gulp.src(['source/**/*.html'])
         .pipe(linter())
         .pipe(gulp.dest('output'));
 });
